@@ -65,6 +65,8 @@ $customers = getAll('customers');
                 <td>
                     <a href="/db/edit_customer.php?id=<?= $customer['customers_id'] ?>" class="btn btn-sm btn-warning">Edit</a>
                     <a href="/db/delete_customer.php?id=<?= $customer['customers_id'] ?>" class="btn btn-sm btn-danger">Delete</a>
+                    <a href="/db/generate_invoice.php?id=<?= $customer['customers_id'] ?>" class="btn btn-sm btn-success">Generate Invoice</a>
+
                 </td>
             </tr>
             <?php endforeach; ?>
